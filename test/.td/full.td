@@ -1,0 +1,21 @@
+[
+    {
+        "author": "Tom Brandenburg",
+        "brief": "Test",
+        "category": "techdebt",
+        "severity": "error",
+        "votes": 10,
+        "discussion": [
+            {
+                "author": "Tom Brandenburg",
+                "comment": "First finding",
+                "timestamp": 1671388197
+            },
+            {
+                "author": "Somebody Else",
+                "comment": "First comment",
+                "timestamp": 1671388198
+            }
+        ]
+    }
+]

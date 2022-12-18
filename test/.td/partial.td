@@ -1,0 +1,7 @@
+[
+    {
+        "author": "Tom Brandenburg",
+        "brief": "Test2",
+        "category": "fixme"
+    }
+]

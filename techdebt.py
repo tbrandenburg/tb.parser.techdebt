@@ -23,12 +23,11 @@ def main():
   
     args = parser.parse_args()
 
-    files = FileTree(args.path,[FileFilterDir(["test"]),
+    files = FileTree(args.path,[FileFilterDir([".*"]),
                                 FileFilterFile([".*\.td"])],
                                [FileVisitorTechDebt()])
 
-    print("[techdebt] Writing json to build/file_tree.json...")
-    files.to_json("build/file_tree.json")
+    files.to_json("build/td_tree.json")
 
     return 0
 

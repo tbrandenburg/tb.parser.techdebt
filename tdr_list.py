@@ -18,7 +18,7 @@ from FileVisitorFileSize import *
 from FileVisitorTechDebt import *
 
 def main():
-    parser = argparse.ArgumentParser(description='Parse file structure')
+    parser = argparse.ArgumentParser(description='Technical Debt Record Tool - List Technical Debts')
     parser.add_argument("--path", "-p", help="Root path (relative)", type=str, default=".")
     parser.add_argument('--color', "-c", help="Coloured output", action='store_true')
     parser.add_argument("--no-color", "-nc", help="No coloured output", dest='color', action='store_false')
@@ -29,8 +29,6 @@ def main():
     files = FileTree(args.path,[FileFilterDir([".*"]),
                                 FileFilterFile([".*\.tdr"])],
                                [FileVisitorTechDebt(args.color)])
-
-    files.to_json("build/td_tree.json")
 
     return 0
 

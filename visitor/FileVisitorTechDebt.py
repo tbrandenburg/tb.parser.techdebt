@@ -14,12 +14,19 @@ class colors:
     UNDERLINE = '\033[4m'
 
 class FileVisitorTechDebt(FileVisitor):
+    __colored = True
+    
+    def __init__(self,colored):
+        self.__colored = colored
 
     def visit(self,isDir,relFilePath,absFilePath,fileName) -> dict:
         if not isDir:
             with open(absFilePath, 'r') as f:
                 techdebts = json.load(f)
                 for techdebt in techdebts:
-                    print("[" + colors.WARNING + "TECHDEBT" + colors.ENDC + "] " + techdebt["brief"])
+                    if self.__colored:
+                        print("[" + colors.WARNING + "TECHDEBT" + colors.ENDC + "] " + techdebt["brief"])
+                    else:
+                        print("[TECHDEBT] " + techdebt["brief"])
                 return {"techdebts":techdebts}
         return dict()

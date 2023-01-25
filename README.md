@@ -1,2 +1,2 @@
-# tb.parser.techdebt
-Parses a directory recursively for technical debt files
+# tdr
+Tool to manage technical debt records (with tributes to [adr's](https://adr.github.io/))

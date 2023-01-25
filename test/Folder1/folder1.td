@@ -1,7 +1,7 @@
 [
     {
         "author": "Tom Brandenburg",
-        "brief": "Test3",
+        "brief": "This component is not following up architecture",
         "category": "todo"
     }
 ]

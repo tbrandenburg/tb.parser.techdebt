@@ -1,7 +1,7 @@
 [
     {
         "author": "Tom Brandenburg",
-        "brief": "Test",
+        "brief": "I don't like this Software at all",
         "category": "techdebt",
         "severity": "error",
         "votes": 10,

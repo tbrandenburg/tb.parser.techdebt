@@ -40,6 +40,8 @@ class FileVisitorTechDebt(FileVisitor):
         return "[" + self.__colorize(techdebt["severity"], str(techdebt["severity"]).upper()) + "][" + self.__colorize(techdebt["severity"], str(techdebt["category"]).upper()) + "] " + techdebt["brief"] + ", File: "  + techdebt["file"] + ", Line: "  + str(techdebt["line"]) + ", Column: "  + str(techdebt["column"])
 
     def __preparePrint(self, techdebt):
+        if "id" not in techdebt:
+            techdebt["id"] = ""
         if "brief" not in techdebt:
             techdebt["brief"] = "Undefined"
         if "author" not in techdebt:
@@ -48,6 +50,8 @@ class FileVisitorTechDebt(FileVisitor):
             techdebt["date"] = ""
         if "description" not in techdebt:
             techdebt["description"] = ""
+        if "owner" not in techdebt:
+            techdebt["owner"] = ""
         if "category" not in techdebt:
             techdebt["category"] = "techdebt"
         if "severity" not in techdebt:
@@ -64,6 +68,8 @@ class FileVisitorTechDebt(FileVisitor):
             techdebt["votes"] = 1
         if "discussion" not in techdebt:
             techdebt["discussion"] = []
+        if "tags" not in techdebt:
+            techdebt["tags"] = []
         return techdebt
 
     def __print(self, techdebt):

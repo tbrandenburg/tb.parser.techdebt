@@ -3,9 +3,9 @@ Tool to manage technical debt records (with tributes to [adr's](https://adr.gith
 
 It is possible to create technical debt records and get reports like:
 
-    .:0:0: warning: 1 2 3 4 [TECHDEBT]
+    MyFile1.c:0:0: warning: 1 2 3 4 [TECHDEBT]
     .:0:0: error: I don't like this Software at all [TECHDEBT]
-    .:0:0: warning: new_test [TECHDEBT]
+    MyComponent/MyFile2.c:0:0: warning: new_test [TECHDEBT]
     .:0:0: warning: Test2 [FIXME]
     .:0:0: warning: test [TECHDEBT]
     .:0:0: warning: This component is not following up architecture [TODO]

@@ -18,3 +18,5 @@ or:
     [WARNING][FIXME] Test2, File: ., Line: 0, Column: 0
     [WARNING][TECHDEBT] test, File: ., Line: 0, Column: 0
     [WARNING][TODO] This component is not following up architecture, File: ., Line: 0, Column: 0
+
+With that modern IDEs can perform problem matching and issue highlighting in the editor.

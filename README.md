@@ -12,9 +12,9 @@ It is possible to create technical debt records and get reports like:
 
 or:
 
-    [WARNING][TECHDEBT] 1 2 3 4, File: ., Line: 0, Column: 0
+    [WARNING][TECHDEBT] 1 2 3 4, File: MyFile1.c, Line: 0, Column: 0
     [ERROR][TECHDEBT] I don't like this Software at all, File: ., Line: 0, Column: 0
-    [WARNING][TECHDEBT] new_test, File: ., Line: 0, Column: 0
+    [WARNING][TECHDEBT] new_test, File: MyComponent/MyFile2.c, Line: 0, Column: 0
     [WARNING][FIXME] Test2, File: ., Line: 0, Column: 0
     [WARNING][TECHDEBT] test, File: ., Line: 0, Column: 0
     [WARNING][TODO] This component is not following up architecture, File: ., Line: 0, Column: 0

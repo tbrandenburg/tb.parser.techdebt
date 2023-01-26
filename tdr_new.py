@@ -5,16 +5,23 @@ import pprint
 import json
 import sys
 
+from datetime import date
 
-def tdr_template():
-    tpl = [
-        {
-            "author": "",
-            "brief": "",
-            "category": "techdebt",
-            "file": ""
-        }
-    ]
+def tdr_template(title):
+    tpl = {
+        "brief": title,
+        "author": os.getlogin(),
+        "date": date.today().strftime("%Y-%m-%d"),
+        "description": "",
+        "category": "techdebt",
+        "severity": "warning",
+        "priority": "",
+        "file": ".",
+        "line": 0,
+        "column": 0,
+        "votes": 1,
+        "discussion": []
+    }
     return tpl
 
 
@@ -35,8 +42,7 @@ def tdr_new(dir, title):
     # Create TDR file if not exist
     if not os.path.exists(tdrFilePath):
         with open(os.path.abspath(tdrFilePath), "w") as jsonFile:
-            tpl = tdr_template()
-            tpl[0]["brief"] = title_spaced
+            tpl = tdr_template(title_spaced)
             jsonObj = json.dumps(tpl, indent=4)
             jsonFile.write(jsonObj)
             print("[TDR] Created TDR: " + tdrFilePath)
@@ -46,7 +52,8 @@ def tdr_new(dir, title):
 
 def main():
     parser = argparse.ArgumentParser(
-        description='Technical Debt Record Tool - Create New Technical Debt')
+        prog='tdr_new',
+        description='Technical Debt Record Tool - Create new technical debt')
     parser.add_argument('title', metavar='Title of TDR',
                         nargs='+', help='Title of the TDR')
     parser.add_argument("--path", "-p", help="Path", type=str, default=".")

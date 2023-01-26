@@ -1,21 +1,19 @@
-[
-    {
-        "author": "Tom Brandenburg",
-        "brief": "I don't like this Software at all",
-        "category": "techdebt",
-        "severity": "error",
-        "votes": 10,
-        "discussion": [
-            {
-                "author": "Tom Brandenburg",
-                "comment": "First finding",
-                "timestamp": 1671388197
-            },
-            {
-                "author": "Somebody Else",
-                "comment": "First comment",
-                "timestamp": 1671388198
-            }
-        ]
-    }
-]
+{
+    "author": "Tom Brandenburg",
+    "brief": "I don't like this Software at all",
+    "category": "techdebt",
+    "severity": "error",
+    "votes": 10,
+    "discussion": [
+        {
+            "author": "Tom Brandenburg",
+            "comment": "First finding",
+            "timestamp": 1671388197
+        },
+        {
+            "author": "Somebody Else",
+            "comment": "First comment",
+            "timestamp": 1671388198
+        }
+    ]
+}

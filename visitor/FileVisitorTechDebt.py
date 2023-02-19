@@ -66,6 +66,14 @@ class FileVisitorTechDebt(FileVisitor):
             techdebt["column"] = 0
         if "votes" not in techdebt:
             techdebt["votes"] = 1
+        if "workitem" not in techdebt:
+            techdebt["workitem"] = ""
+        if "cost" not in techdebt:
+            techdebt["cost"] = ""
+        if "effort" not in techdebt:
+            techdebt["effort"] = ""
+        if "impedes" not in techdebt:
+            techdebt["impedes"] = ""
         if "discussion" not in techdebt:
             techdebt["discussion"] = []
         if "tags" not in techdebt:

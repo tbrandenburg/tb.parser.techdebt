@@ -1,0 +1,21 @@
+{
+    "id": "TDR_C5CA09C4",
+    "brief": "Dies ist ein Test",
+    "author": "t_bh",
+    "date": "2023-02-19",
+    "description": "",
+    "owner": "",
+    "category": "techdebt",
+    "severity": "warning",
+    "priority": "",
+    "file": ".",
+    "line": 0,
+    "column": 0,
+    "votes": 1,
+    "workitem": "",
+    "cost": "",
+    "effort": "",
+    "impedes": "",
+    "discussion": [],
+    "tags": []
+}

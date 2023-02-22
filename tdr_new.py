@@ -28,12 +28,10 @@ def __tdr_template(title, file, line, column):
         "file": file,
         "line": line,
         "column": column,
-        "votes": 1,
         "workitem": "",
         "cost": "",
         "effort": "",
         "impedes": "",
-        "discussion": [],
         "tags": []
     }
     return tpl
